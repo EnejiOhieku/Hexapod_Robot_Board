@@ -1,0 +1,13 @@
+# KiCad temporary and backup files
+*-backups/
+.history/
+*.kicad_prl
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-save.kicad_pcb
+*-save.kicad_sch
+*.lck
+*.bck
+*~
+*.tmp

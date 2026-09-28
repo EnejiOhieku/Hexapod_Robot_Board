@@ -1,0 +1,21 @@
+** Drc report for Hexapod_Robot_Board.kicad_pcb **
+** Created on 2026-09-28T06:21:52 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+    - Text height out of range
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
