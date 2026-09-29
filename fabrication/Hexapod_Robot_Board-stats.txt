@@ -1,6 +1,6 @@
 PCB statistics report
 =====================
-- Date: Mon 28 Sep 2026 06:23:20 AM WAT
+- Date: Tue 29 Sep 2026 02:37:12 PM WAT
 - Project: Hexapod_Robot_Board
 - Board name: Hexapod_Robot_Board
 
@@ -9,9 +9,9 @@ Board
 - Width: 100.0000 mm
 - Height: 80.0000 mm
 - Area: 7992.271 mm²
-- Front copper area: 1039.13 mm²
-- Back copper area: 512.126 mm²
-- Min track clearance: 0.1516 mm
+- Front copper area: 1043.603 mm²
+- Back copper area: 529.231 mm²
+- Min track clearance: 0.1500 mm
 - Min track width: 0.2000 mm
 - Min drill diameter: 0.2000 mm
 - Board stackup thickness: 1.6000 mm
@@ -31,7 +31,7 @@ Pads
 
 Vias
 ----
-- Through vias: 121
+- Through vias: 122
 - Blind vias: 0
 - Buried vias: 0
 - Micro vias: 0
@@ -51,12 +51,14 @@ Drill holes
 
 | Count | Shape |    X Size |    Y Size | Plated | Via/Pad | Start Layer | Stop Layer |
 |-------|-------|-----------|-----------|--------|---------|-------------|------------|
-|   112 | Round | 0.3000 mm | 0.3000 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|    88 | Round | 0.3000 mm | 0.3000 mm |    PTH |     Via |        F.Cu |       B.Cu |
 |    82 | Round | 1.0000 mm | 1.0000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
 |    32 | Round | 0.5000 mm | 0.5000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
 |    21 | Round | 0.2000 mm | 0.2000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
+|    20 | Round | 0.2500 mm | 0.2500 mm |    PTH |     Via |        F.Cu |       B.Cu |
 |     9 | Round | 0.8000 mm | 0.8000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
 |     9 | Round | 0.3500 mm | 0.3500 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|     5 | Round | 0.4000 mm | 0.4000 mm |    PTH |     Via |        F.Cu |       B.Cu |
 |     4 | Round | 3.2000 mm | 3.2000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
 |     2 | Round | 1.9000 mm | 1.9000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
 |     2 | Round | 1.5000 mm | 1.5000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
