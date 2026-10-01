@@ -3844,7 +3844,7 @@
 			(uuid "c72097de-136d-4ddb-a33b-3b27d8f15d8b")
 		)
 		(embedded_fonts no)
-		(model "/3dmodels/AMASS_XT30PW-M_1x02_P2.50mm_Horizontal.step"
+		(model "${KIPRJMOD}/3dmodels/AMASS_XT30PW-M_1x02_P2.50mm_Horizontal.step"
 			(offset
 				(xyz -2.5 0 0)
 			)
@@ -18634,7 +18634,7 @@
 			(uuid "bd3e92ea-3f50-4c16-a2dd-ae8dfe31f3af")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S3-WROOM-1U.step"
+		(model "${KIPRJMOD}/3dmodels/ESP32-S3-WROOM-1U.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21033,7 +21033,7 @@
 			(uuid "80574e6b-4c9d-4068-8d3d-2f05247c2aa0")
 		)
 		(embedded_fonts no)
-		(model "/3dmodels/L_7.3x7.3_H4.5.step"
+		(model "${KIPRJMOD}/3dmodels/L_7.3x7.3_H4.5.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30000,7 +30000,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.6mm.step"
+		(model "${KIPRJMOD}/3dmodels/InvenSense_QFN-24_4x4mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31446,7 +31446,7 @@
 			(uuid "317c07ec-0f88-4557-b811-1206b5c5f5e8")
 		)
 		(embedded_fonts no)
-		(model "/3dmodels/USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A.step"
+		(model "${KIPRJMOD}/3dmodels/USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A.step"
 			(offset
 				(xyz 0 0 0)
 			)
