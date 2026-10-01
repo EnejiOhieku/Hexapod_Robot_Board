@@ -18636,7 +18636,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3dmodels/ESP32-S3-WROOM-1U.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -9 -9.6 0)
 			)
 			(scale
 				(xyz 1 1 1)
