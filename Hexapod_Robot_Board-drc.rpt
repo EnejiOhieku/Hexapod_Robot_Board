@@ -1,10 +1,94 @@
 ** Drc report for Hexapod_Robot_Board.kicad_pcb **
-** Created on 2026-10-01T07:29:04 **
+** Created on 2026-10-04T05:59:15 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 0 DRC violations **
+** Found 17 DRC violations **
+[shorting_items]: Items shorting two nets (nets Net-(BZ1-+) and GND)
+    Local override; error
+    @(58.0000 mm, 61.3250 mm): Track [Net-(BZ1-+)] on F.Cu, length 4.6750 mm
+    @(58.0000 mm, 62.8000 mm): PTH pad 2 [GND] of BZ1
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(13.2500 mm, -4.6400 mm): Track [+3V3_VIS] on F.Cu, length 4.2930 mm
+    @(18.1000 mm, -7.5000 mm): Track [VISION_RESET] on F.Cu, length 4.9639 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)
+    Local override; error
+    @(55.2500 mm, 46.9500 mm): Track [Net-(C_MPU2-Pad1)] on F.Cu, length 2.0698 mm
+    @(54.7500 mm, 48.2000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and +3V3)
+    Local override; error
+    @(54.7500 mm, 48.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(54.2500 mm, 48.2000 mm): Via [+3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and +3V3)
+    Local override; error
+    @(54.7500 mm, 48.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(54.2500 mm, 48.2000 mm): Via [+3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and +3V3)
+    Local override; error
+    @(54.7500 mm, 48.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(54.2500 mm, 48.2000 mm): Via [+3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)
+    Local override; error
+    @(54.7500 mm, 46.9500 mm): Track [GND] on F.Cu, length 1.2500 mm
+    @(54.2500 mm, 48.2000 mm): Via [+3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets Net-(C_MPU2-Pad1) and GND)
+    Local override; error
+    @(55.2500 mm, 46.9500 mm): Pad 10 [Net-(C_MPU2-Pad1)] of U7 on F.Cu
+    @(54.7500 mm, 46.9500 mm): Track [GND] on F.Cu, length 1.0000 mm
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(5.0000 mm, -11.0000 mm): Footprint J_TOF
+    @(16.0000 mm, -9.0000 mm): Footprint SW_VIS_RST
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(16.0000 mm, -9.0000 mm): Footprint SW_VIS_RST
+    @(22.0000 mm, 2.5000 mm): Footprint U8
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(54.7500 mm, 46.9500 mm): Track [GND] on F.Cu, length 1.0000 mm
+    @(55.2500 mm, 46.9500 mm): Pad 10 [Net-(C_MPU2-Pad1)] of U7 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(58.0000 mm, 61.3250 mm): Track [Net-(BZ1-+)] on F.Cu, length 4.6750 mm
+    @(58.0000 mm, 62.8000 mm): PTH pad 2 [GND] of BZ1
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(61.2000 mm, 66.0000 mm): Track [GND] on F.Cu, length 2.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(58.0000 mm, 69.2000 mm): Track [GND] on F.Cu, length 1.6000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(14.5900 mm, -3.9900 mm): Track [VISION_RESET] on F.Cu, length 1.3100 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(42.9000 mm, 3.0000 mm): Track [CAM_D0] on F.Cu, length 1.4000 mm
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints; warning
+    @(54.7500 mm, 48.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(54.2500 mm, 48.2000 mm): Via [+3V3] on F.Cu - B.Cu
 
-** Found 0 unconnected pads **
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(61.2000 mm, 66.0000 mm): Track [GND] on F.Cu, length 2.0000 mm
+    @(58.0000 mm, 69.2000 mm): Track [GND] on F.Cu, length 1.6000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(8.7250 mm, -2.5000 mm): Pad 1 [VISION_RESET] of C_VIS_EN on F.Cu
+    @(10.3250 mm, -0.5000 mm): Pad 2 [VISION_RESET] of R_VIS_EN on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(10.3250 mm, -0.5000 mm): Pad 2 [VISION_RESET] of R_VIS_EN on F.Cu
+    @(13.2500 mm, -3.3700 mm): Pad 3 [VISION_RESET] of U8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(18.1000 mm, -7.5000 mm): Track [VISION_RESET] on F.Cu, length 4.9639 mm
+    @(13.2500 mm, -3.3700 mm): Pad 3 [VISION_RESET] of U8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(18.1000 mm, -9.0000 mm): Track [VISION_RESET] on F.Cu, length 1.5000 mm
+    @(89.9050 mm, 11.8500 mm): Pad 22 [VISION_RESET] of U1 on F.Cu
 
 ** Found 0 Footprint errors **
 

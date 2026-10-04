@@ -142,7 +142,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.35,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -241,7 +241,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -711,16 +711,16 @@
       {
         "filename": "Hexapod_Robot_Board.kicad_sch",
         "name": "Hexapod_Robot_Board",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "44f02a75-3141-486c-ae96-cf48718534a3"
       }
     ],
-    "used_designators": "",
+    "used_designators": "D_ISO1,LED_R1,J_UART1,L_SERVO_R1,R_OE1,J_L6_C1,J_L5_T1,R_LED_R1,J_L2_F1,C_OUT1_R1,#FLG_R1,J_CAM1,R_VIS_BOOT1,J_L3_T1,J_L6_F1,SW_VIS_RST1,R_CAM_LED1,J_L2_T1,R_CAM_SDA1,J_L5_F1,LED_CHG1,C_VIS_OUT1,J_BAT1,J_L1_F1,J_L4_T1,J_L3_F1,J_L5_C1,C_OUT2_R1,J_L1_T1,R_LED_L1,J_TOF1,D_CATCH_L1,R_FB2_R1,R_BZ1,R_SDA1,R_NEO1,R_VIS_EN1,D_CAM_LED1,R_FB1_L1,C_OUT1_L1,LED_RGB_MAIN1,J_L1_C1,C_OUT2_L1,U_REG_5V_TOF1,R_CHG1,C_VIS_EN1,R_CAM_SCL1,LED_L1,#FLG_L1,C_IN1_R1,Q_CAM_LED1,D_CATCH_R1,R_PD_CAM_LED1,U3_L1,R_STAT1,R_FULL1,J_L4_C1,D_STAT1,R_3V3_LED1,J_CAM_LED1,R_FB1_R1,J_SW_EXT1,C_VBUS_VIS1,L_SERVO_L1,C_OUT3_R1,R_FB2_L1,U_LDO_VIS1,C_IN2_L1,LED_FULL1,C_DIV1,C_VBUS_MAIN1,C_TOF_OUT1,J_L3_C1,L_CHG1,J_L2_C1,U3_R1,C_OUT3_L1,C_IN1_L1,J_L6_T1,J_I2C1,C_NEO1,C_VIS_IN1,J_L4_F1,SW_PWR1,C_TOF_IN1,R_SCL1,C_IN2_R1,SW_VIS_BOOT1",
     "variants": []
   },
   "sheets": [
     [
       "44f02a75-3141-486c-ae96-cf48718534a3",
-      "Root"
+      "Hexapod_Robot_Board"
     ]
   ],
   "text_variables": {},

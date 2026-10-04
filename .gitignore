@@ -11,3 +11,10 @@
 *.bck
 *~
 *.tmp
+
+# Backup and temp files
+_restore_backup_*/
+*.orig
+*.pre_final_fix_*
+scripts/__pycache__/
+fabrication/Hexapod_Robot_Board_Schematic.svg/

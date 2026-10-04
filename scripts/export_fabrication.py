@@ -168,7 +168,15 @@ def main():
                 elif val == "MPU-6050": lcsc = "C24112"
                 elif "ESP32-S3-WROOM-1U" in val: lcsc = "C2934560"
                 elif val == "PCA9685PW": lcsc = "C15309"
+                elif val == "AMS1117-5.0": lcsc = "C4262"
                 elif "AMS1117" in val: lcsc = "C6186"
+                elif "AO3400" in val: lcsc = "C20917"
+                elif "WS2812B" in val or "WS2812B" in pkg: lcsc = "C2843785"
+                elif "FH12-24S" in pkg: lcsc = "C264338"
+                elif "TYPE-C-16P" in pkg or "HC-TYPE-C" in pkg: lcsc = "C2836886"
+                elif "SW_SPST" in pkg or "Tactile" in pkg: lcsc = "C318884"
+                elif "PinHeader_1x04" in pkg: lcsc = "C49240"
+                elif "PinHeader_1x02" in pkg: lcsc = "C2883695"
                 elif val == "SS54": lcsc = "C22452"
                 elif val == "SS14": lcsc = "C2410"
                 elif "47uH" in val: lcsc = "C518625"
@@ -180,12 +188,43 @@ def main():
                 elif val == "10k": lcsc = "C25804"
                 elif val == "1k": lcsc = "C21190"
                 elif val == "330": lcsc = "C23138"
+                elif val == "100": lcsc = "C22775"
                 elif val == "5.1k": lcsc = "C23186"
                 w.writerow([idx, ", ".join(sorted_refs), len(refs), val, pkg, fp_type, lcsc])
 
         print(f"Generated JLCPCB CPL ({len(board.GetFootprints())} components) and BOM ({len(groups)} line items).")
     except Exception as e:
         print(f"Warning: pcbnew BOM/CPL generation error: {e}")
+
+    # 9. Generate 2D/3D PNG Renders
+    run_cmd([
+        KICAD_CLI, 'pcb', 'render',
+        '--side', 'top',
+        '--quality', 'high',
+        '--width', '2400', '--height', '1800',
+        '-o', os.path.join(FAB_DIR, 'Hexapod_Robot_Board_Top.png'),
+        BOARD_FILE
+    ], "Rendering Top View (PNG)")
+
+    run_cmd([
+        KICAD_CLI, 'pcb', 'render',
+        '--side', 'bottom',
+        '--quality', 'high',
+        '--width', '2400', '--height', '1800',
+        '-o', os.path.join(FAB_DIR, 'Hexapod_Robot_Board_Bottom.png'),
+        BOARD_FILE
+    ], "Rendering Bottom View (PNG)")
+
+    run_cmd([
+        KICAD_CLI, 'pcb', 'render',
+        '--perspective',
+        '--rotate', '-45,0,45',
+        '--floor',
+        '--quality', 'high',
+        '--width', '2400', '--height', '1800',
+        '-o', os.path.join(FAB_DIR, 'Hexapod_Robot_Board_3D.png'),
+        BOARD_FILE
+    ], "Rendering 3D Isometric View (PNG)")
 
     print("=== Fabrication Export Pipeline Finished Successfully ===")
 
