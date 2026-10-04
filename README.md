@@ -47,8 +47,8 @@ flowchart TD
         U1 -- "I2C (GPIO1/41)" --> U5["PCA9685 Left (0x40) — U5"]
         U1 -- "I2C (GPIO1/41)" --> U6["PCA9685 Right (0x41) — U6"]
         U1 -- "I2C (GPIO1/41)" --> U7["MPU-6050 6-Axis IMU (Centre, 0x68) — U7"]
-        U1 -- "MPU_INT (GPIO10)" <-- U7
-        U1 -- "ADC (GPIO5)" --> DIV
+        U7 -- "MPU_INT (GPIO10)" --> U1
+        DIV -- "ADC (GPIO5)" --> U1
         U1 -- "GPIO48" --> LED_RGB_MAIN["WS2812B-2020 Status NeoPixel"]
     end
 
@@ -62,7 +62,7 @@ flowchart TD
         U_REG_5V_TOF -- "+5V_TOF (Isolated from Servos)" --> TOF
     end
 
-    U1 <== "Inter-MCU Full-Duplex UART (GPIO43/44) + Frame Sync IRQ" ==> U8
+    U1 <==>|"Inter-MCU Full-Duplex UART (GPIO43/44) + Frame Sync IRQ"| U8
 
     subgraph Servos["Servo Actuation (Split Left/Right Rails)"]
         BUCK_L --> V_SERVO_L["V_SERVO_L Plane (In2.Cu West)"]
