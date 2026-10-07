@@ -1,260 +1,413 @@
 ** Drc report for Hexapod_Robot_Board.kicad_pcb **
-** Created on 2026-10-04T06:18:37 **
+** Created on 2026-10-07T06:19:40 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 60 DRC violations **
-[shorting_items]: Items shorting two nets (nets CAM_LED_DRAIN and VISION_RESET)
-    Local override; error
-    @(44.0000 mm, -8.4600 mm): PTH pad 2 [CAM_LED_DRAIN] of J_CAM_LED
-    @(47.1000 mm, -8.0000 mm): Track [VISION_RESET] on B.Cu, length 36.7750 mm
+** Found 73 DRC violations **
 [clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
     Local override; error
-    @(10.3250 mm, -8.0000 mm): Track [VISION_RESET] on B.Cu, length 7.5000 mm
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(47.1000 mm, -8.0000 mm): Track [VISION_RESET] on B.Cu, length 36.7750 mm
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(10.3250 mm, -0.5000 mm): Track [VISION_RESET] on B.Cu, length 12.3500 mm
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
-    Rule: board setup constraints hole; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[shorting_items]: Items shorting two nets (nets VISION_RESET and CAM_SCL)
-    Local override; error
-    @(13.2500 mm, -0.5000 mm): Track [VISION_RESET] on F.Cu, length 2.9250 mm
-    @(13.2500 mm, -0.8300 mm): Pad 5 [CAM_SCL] of U8 on F.Cu
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
-    Rule: board setup constraints hole; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[shorting_items]: Items shorting two nets (nets CAM_SDA and VISION_RESET)
-    Local override; error
-    @(13.2500 mm, -2.1000 mm): Pad 4 [CAM_SDA] of U8 on F.Cu
-    @(13.2500 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 2.8700 mm
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
-    Rule: board setup constraints hole; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
-[shorting_items]: Items shorting two nets (nets +3V3_VIS and VISION_RESET)
-    Local override; error
-    @(8.6750 mm, -0.5000 mm): Pad 1 [+3V3_VIS] of R_VIS_EN on F.Cu
-    @(8.7250 mm, -0.5000 mm): Track [VISION_RESET] on F.Cu, length 1.6000 mm
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
-[shorting_items]: Items shorting two nets (nets +3V3_VIS and VISION_RESET)
-    Local override; error
-    @(8.6750 mm, -0.5000 mm): Pad 1 [+3V3_VIS] of R_VIS_EN on F.Cu
-    @(8.7250 mm, -2.5000 mm): Track [VISION_RESET] on F.Cu, length 2.0000 mm
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
-    Rule: board setup constraints hole; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(91.5000 mm, 47.8250 mm): Via [Net-(U3_R1-FB)] on F.Cu - B.Cu
     @(56.0000 mm, -15.5000 mm): Zone [V_SERVO_R] on In2.Cu, priority 0
 [hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
     Rule: board setup constraints hole; error
-    @(89.9050 mm, 11.8500 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(91.5000 mm, 47.8250 mm): Via [Net-(U3_R1-FB)] on F.Cu - B.Cu
     @(56.0000 mm, -15.5000 mm): Zone [V_SERVO_R] on In2.Cu, priority 0
-[shorting_items]: Items shorting two nets (nets GND and Net-(BZ1-+))
+[shorting_items]: Items shorting two nets (nets unconnected-(U2-SYS-Pad15) and unconnected-(U2-SYS-Pad15)_1)
     Local override; error
-    @(58.0000 mm, 62.8000 mm): PTH pad 2 [GND] of BZ1
-    @(58.0000 mm, 62.8000 mm): Track [Net-(BZ1-+)] on F.Cu, length 4.0000 mm
+    @(37.9625 mm, 72.7500 mm): Track [unconnected-(U2-SYS-Pad15)] on F.Cu, length 0.5000 mm
+    @(37.9625 mm, 73.2500 mm): Pad 15 [unconnected-(U2-SYS-Pad15)_1] of U2 on F.Cu
+[shorting_items]: Items shorting two nets (nets VIS_USB_D- and VIS_USB_D+)
+    Local override; error
+    @(13.2500 mm, 9.3300 mm): Pad 13 [VIS_USB_D-] of U8 on F.Cu
+    @(14.3659 mm, 9.3300 mm): Track [VIS_USB_D+] on F.Cu, length 1.1159 mm
+[shorting_items]: Items shorting two nets (nets VBUS_MAIN and GND)
+    Local override; error
+    @(101.5059 mm, 80.7191 mm): Track [VBUS_MAIN] on F.Cu, length 3.8454 mm
+    @(104.2250 mm, 78.0000 mm): Pad 1 [GND] of C_VBUS_MAIN1 on F.Cu
+[shorting_items]: Items shorting two nets (nets VIS_USB_D+ and VIS_USB_D-)
+    Local override; error
+    @(13.2500 mm, 10.6000 mm): Pad 14 [VIS_USB_D+] of U8 on F.Cu
+    @(13.2500 mm, 10.6000 mm): Track [VIS_USB_D-] on F.Cu, length 1.0017 mm
 [clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
     Local override; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [V_SERVO_L] on In2.Cu, priority 0
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
-    Rule: board setup constraints hole; error
-    @(10.3250 mm, -0.5000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(1.0000 mm, -15.5000 mm): Zone [V_SERVO_L] on In2.Cu, priority 0
-[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.3500 mm)
-    Local override; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(47.3500 mm, -8.4000 mm): Pad MP [<no net>] of J_CAM on F.Cu
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
-[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
-    Local override; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(79.8973 mm, 21.2030 mm): Via [Net-(LED_3V3-A)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
 [hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
     Rule: board setup constraints hole; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(79.8973 mm, 21.2030 mm): Via [Net-(LED_3V3-A)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [GND] on B.Cu, priority 0
 [clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
     Local override; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(79.8973 mm, 21.2030 mm): Via [Net-(LED_3V3-A)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
 [hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
     Rule: board setup constraints hole; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(79.8973 mm, 21.2030 mm): Via [Net-(LED_3V3-A)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [GND] on In1.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0253 mm)
+    Local override; error
+    @(86.7250 mm, 63.5500 mm): Pad 19 [unconnected-(U5-LED12-Pad19)] of U5 on F.Cu
+    @(85.6622 mm, 63.6251 mm): Via [PWM_R_7] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1386 mm)
+    Local override; error
+    @(81.0000 mm, 62.9000 mm): Pad 9 [PWM_R_3] of U5 on F.Cu
+    @(79.7338 mm, 62.8502 mm): Track [PWM_R_4] on F.Cu, length 1.0957 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1277 mm)
+    Local override; error
+    @(80.5240 mm, 64.2750 mm): Track [PWM_R_5] on F.Cu, length 1.6149 mm
+    @(81.0000 mm, 63.5500 mm): Pad 10 [PWM_R_4] of U5 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0770 mm)
+    Local override; error
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+    @(80.0855 mm, 60.6306 mm): Track [PWM_R_0] on F.Cu, length 3.0423 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1197 mm)
+    Local override; error
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+    @(80.3935 mm, 57.2803 mm): Track [PWM_R_0] on F.Cu, length 4.7681 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0041 mm)
+    Local override; error
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+    @(80.0855 mm, 57.5883 mm): Track [PWM_R_0] on F.Cu, length 0.4356 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1324 mm)
+    Local override; error
+    @(22.4424 mm, 69.2750 mm): Track [PWM_L_5] on F.Cu, length 3.9502 mm
+    @(23.0000 mm, 68.6250 mm): Pad 10 [PWM_L_4] of U6 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0747 mm)
+    Local override; error
+    @(23.0000 mm, 67.9750 mm): Pad 9 [PWM_L_3] of U6 on F.Cu
+    @(22.5240 mm, 68.6250 mm): Track [PWM_L_4] on F.Cu, length 1.1629 mm
+[shorting_items]: Items shorting two nets (nets +5V_TOF and CAM_LED_DRAIN)
+    Local override; error
+    @(43.6500 mm, -4.0000 mm): Pad 2 [+5V_TOF] of D_CAM_LED1 on F.Cu
+    @(43.6500 mm, -4.0000 mm): Track [CAM_LED_DRAIN] on F.Cu, length 1.0595 mm
 [clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
     Local override; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(18.5000 mm, 47.8250 mm): Via [Net-(U3_L1-FB)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [V_SERVO_L] on In2.Cu, priority 0
 [hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
     Rule: board setup constraints hole; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(18.5000 mm, 47.8250 mm): Via [Net-(U3_L1-FB)] on F.Cu - B.Cu
     @(1.0000 mm, -15.5000 mm): Zone [V_SERVO_L] on In2.Cu, priority 0
-[tracks_crossing]: Tracks crossing
+[shorting_items]: Items shorting two nets (nets Net-(U3_R1-FB) and V_SERVO_R)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(45.0554 mm, 2.8269 mm): Track [CAM_D4] on B.Cu, length 14.7360 mm
-[shorting_items]: Items shorting two nets (nets VISION_RESET and CAM_PWDN)
+    @(89.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_R1-FB)] of R_FB2_R1 on F.Cu
+    @(89.5000 mm, 51.3250 mm): Track [V_SERVO_R] on F.Cu, length 0.4867 mm
+[shorting_items]: Items shorting two nets (nets Net-(U3_R1-FB) and V_SERVO_R)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(30.4032 mm, 12.0915 mm): Via [CAM_PWDN] on F.Cu - B.Cu
-[tracks_crossing]: Tracks crossing
+    @(90.1500 mm, 40.7000 mm): Pad 2 [Net-(U3_R1-FB)] of U3_R1 on F.Cu
+    @(88.7365 mm, 40.7000 mm): Track [V_SERVO_R] on F.Cu, length 1.4135 mm
+[shorting_items]: Items shorting two nets (nets Net-(U3_R1-FB) and V_SERVO_R)
     Local override; error
-    @(13.2500 mm, -2.1000 mm): Track [CAM_SDA] on F.Cu, length 1.0017 mm
-    @(13.2500 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 2.8700 mm
-[shorting_items]: Items shorting two nets (nets VISION_RESET and USB_D+)
+    @(89.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_R1-FB)] of R_FB2_R1 on F.Cu
+    @(89.5000 mm, 50.8383 mm): Track [V_SERVO_R] on F.Cu, length 1.0597 mm
+[shorting_items]: Items shorting two nets (nets V_SERVO_R and Net-(U3_R1-FB))
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(79.1447 mm, 12.0660 mm): Via [USB_D+] on F.Cu - B.Cu
-[tracks_crossing]: Tracks crossing
+    @(87.5446 mm, 41.8919 mm): Track [V_SERVO_R] on F.Cu, length 1.6856 mm
+    @(90.1500 mm, 40.7000 mm): Pad 2 [Net-(U3_R1-FB)] of U3_R1 on F.Cu
+[shorting_items]: Items shorting two nets (nets Net-(LED_3V3-A) and +3V3)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(32.1118 mm, 11.9217 mm): Track [VISION_SYNC] on B.Cu, length 14.8702 mm
-[shorting_items]: Items shorting two nets (nets VISION_RESET and VISION_SYNC)
+    @(78.1750 mm, 22.5000 mm): Pad 1 [Net-(LED_3V3-A)] of R_3V3_LED1 on F.Cu
+    @(78.1750 mm, 20.0375 mm): Track [+3V3] on F.Cu, length 2.4625 mm
+[shorting_items]: Items shorting two nets (nets Net-(LED_3V3-A) and +3V3)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(31.8835 mm, 11.9217 mm): Track [VISION_SYNC] on B.Cu, length 0.2283 mm
-[shorting_items]: Items shorting two nets (nets VISION_RESET and VISION_SYNC)
+    @(78.1750 mm, 22.5000 mm): Pad 1 [Net-(LED_3V3-A)] of R_3V3_LED1 on F.Cu
+    @(78.1750 mm, 22.5000 mm): Track [+3V3] on F.Cu, length 7.3704 mm
+[shorting_items]: Items shorting two nets (nets GND and +3V3)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(31.8835 mm, 11.9217 mm): Via [VISION_SYNC] on F.Cu - B.Cu
-[tracks_crossing]: Tracks crossing
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+    @(81.1375 mm, 57.7750 mm): Track [+3V3] on F.Cu, length 3.7387 mm
+[shorting_items]: Items shorting two nets (nets GND and VISION_RESET)
     Local override; error
-    @(13.2500 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 2.8700 mm
-    @(13.2500 mm, -0.8300 mm): Track [CAM_SCL] on F.Cu, length 1.0017 mm
-[shorting_items]: Items shorting two nets (nets GND and CAM_LED_DRAIN)
+    @(8.7250 mm, -2.5000 mm): Pad 1 [GND] of C_VIS_EN1 on F.Cu
+    @(8.7250 mm, -2.5000 mm): Track [VISION_RESET] on F.Cu, length 0.4000 mm
+[shorting_items]: Items shorting two nets (nets GND and VISION_RESET)
     Local override; error
-    @(42.9000 mm, -8.0000 mm): Pad 1 [GND] of SW_VIS_RST on F.Cu
-    @(39.4775 mm, -8.4600 mm): Track [CAM_LED_DRAIN] on F.Cu, length 4.5225 mm
-[tracks_crossing]: Tracks crossing
+    @(8.7250 mm, -2.5000 mm): Pad 1 [GND] of C_VIS_EN1 on F.Cu
+    @(8.7250 mm, -2.1000 mm): Track [VISION_RESET] on F.Cu, length 2.2627 mm
+[shorting_items]: Items shorting two nets (nets +3V3_VIS and GND)
     Local override; error
-    @(20.3571 mm, -3.2629 mm): Track [TOF_TXD] on B.Cu, length 10.9419 mm
-    @(47.1000 mm, -8.0000 mm): Track [VISION_RESET] on B.Cu, length 36.7750 mm
-[shorting_items]: Items shorting two nets (nets +3V3_VIS and VISION_RESET)
+    @(8.7250 mm, -4.5000 mm): Track [+3V3_VIS] on F.Cu, length 1.0841 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[shorting_items]: Items shorting two nets (nets +3V3_VIS and GND)
     Local override; error
-    @(7.9584 mm, -1.2166 mm): Track [+3V3_VIS] on F.Cu, length 1.0134 mm
-    @(8.7250 mm, -2.5000 mm): Track [VISION_RESET] on F.Cu, length 2.0000 mm
-[shorting_items]: Items shorting two nets (nets VISION_RESET and GND)
+    @(9.4597 mm, -3.7653 mm): Track [+3V3_VIS] on F.Cu, length 1.0390 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[shorting_items]: Items shorting two nets (nets +3V3_VIS and GND)
     Local override; error
-    @(10.3250 mm, 11.8500 mm): Track [VISION_RESET] on B.Cu, length 79.5800 mm
-    @(37.0166 mm, 11.6898 mm): Via [GND] on F.Cu - B.Cu
-[shorting_items]: Items shorting two nets (nets GND and CAM_LED_DRAIN)
+    @(8.5500 mm, -4.6750 mm): Track [+3V3_VIS] on F.Cu, length 2.3250 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[shorting_items]: Items shorting two nets (nets +3V3_VIS and GND)
     Local override; error
-    @(42.9000 mm, -8.0000 mm): Pad 1 [GND] of SW_VIS_RST on F.Cu
-    @(44.0000 mm, -8.4600 mm): PTH pad 2 [CAM_LED_DRAIN] of J_CAM_LED
-[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0000 mm)
+    @(8.7250 mm, -4.5000 mm): Track [+3V3_VIS] on F.Cu, length 0.2475 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0549 mm)
     Local override; error
-    @(47.1000 mm, -8.0000 mm): Pad 2 [VISION_RESET] of SW_VIS_RST on F.Cu
-    @(47.3500 mm, -8.4000 mm): Pad MP [<no net>] of J_CAM on F.Cu
-[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    @(22.5520 mm, 66.0250 mm): Track [PWM_L_0] on F.Cu, length 0.6682 mm
+    @(23.0000 mm, 65.3750 mm): Pad 5 [GND] of U6 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0883 mm)
+    Local override; error
+    @(22.0795 mm, 65.5525 mm): Track [PWM_L_0] on F.Cu, length 0.0227 mm
+    @(23.0000 mm, 65.3750 mm): Pad 5 [GND] of U6 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.0883 mm)
+    Local override; error
+    @(22.0795 mm, 65.5298 mm): Track [PWM_L_0] on F.Cu, length 0.5771 mm
+    @(23.0000 mm, 65.3750 mm): Pad 5 [GND] of U6 on F.Cu
+[shorting_items]: Items shorting two nets (nets Net-(U3_L1-FB) and V_SERVO_L)
+    Local override; error
+    @(20.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_L1-FB)] of R_FB2_L1 on F.Cu
+    @(21.2492 mm, 50.5758 mm): Track [V_SERVO_L] on F.Cu, length 1.0595 mm
+[shorting_items]: Items shorting two nets (nets V_SERVO_L and Net-(U3_L1-FB))
+    Local override; error
+    @(19.8500 mm, 37.3000 mm): Track [V_SERVO_L] on F.Cu, length 3.3500 mm
+    @(19.8500 mm, 37.3000 mm): Pad 2 [Net-(U3_L1-FB)] of U3_L1 on F.Cu
+[shorting_items]: Items shorting two nets (nets +3V3 and GND)
+    Local override; error
+    @(23.0000 mm, 62.7750 mm): Pad 1 [+3V3] of U6 on F.Cu
+    @(23.1375 mm, 62.7750 mm): Track [GND] on F.Cu, length 2.6000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1753 mm)
     Rule: board setup constraints hole; error
-    @(47.3500 mm, -8.4000 mm): Pad MP [<no net>] of J_CAM on F.Cu
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-[courtyards_overlap]: Courtyards overlap
-    Rule: board setup constraints courtyard; error
-    @(45.0000 mm, -8.0000 mm): Footprint SW_VIS_RST
-    @(44.0000 mm, -11.0000 mm): Footprint J_CAM_LED
-[pth_inside_courtyard]: PTH inside courtyard
-    Local override; error
-    @(44.0000 mm, -8.4600 mm): PTH pad 2 [CAM_LED_DRAIN] of J_CAM_LED
-    @(45.0000 mm, -8.0000 mm): Footprint SW_VIS_RST
-[courtyards_overlap]: Courtyards overlap
-    Rule: board setup constraints courtyard; error
-    @(45.0000 mm, -8.0000 mm): Footprint SW_VIS_RST
-    @(55.0000 mm, -7.0000 mm): Footprint J_CAM
+    @(86.7250 mm, 63.5500 mm): Pad 19 [unconnected-(U5-LED12-Pad19)] of U5 on F.Cu
+    @(85.6622 mm, 63.6251 mm): Via [PWM_R_7] on F.Cu - B.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(42.9000 mm, -8.0000 mm): Pad 1 [GND] of SW_VIS_RST on F.Cu
-    @(44.0000 mm, -8.4600 mm): PTH pad 2 [CAM_LED_DRAIN] of J_CAM_LED
+    @(89.5000 mm, 50.8383 mm): Track [V_SERVO_R] on F.Cu, length 1.0597 mm
+    @(89.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_R1-FB)] of R_FB2_R1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(47.1000 mm, -8.0000 mm): Pad 2 [VISION_RESET] of SW_VIS_RST on F.Cu
-    @(47.3500 mm, -8.4000 mm): Pad MP [<no net>] of J_CAM on F.Cu
+    @(88.7365 mm, 40.7000 mm): Track [V_SERVO_R] on F.Cu, length 1.4135 mm
+    @(90.1500 mm, 40.7000 mm): Pad 2 [Net-(U3_R1-FB)] of U3_R1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(58.0000 mm, 62.8000 mm): Track [Net-(BZ1-+)] on F.Cu, length 4.0000 mm
-    @(58.0000 mm, 62.8000 mm): PTH pad 2 [GND] of BZ1
+    @(89.5000 mm, 51.3250 mm): Track [V_SERVO_R] on F.Cu, length 0.4867 mm
+    @(89.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_R1-FB)] of R_FB2_R1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(8.7250 mm, -2.5000 mm): Track [VISION_RESET] on F.Cu, length 2.0000 mm
-    @(8.6750 mm, -0.5000 mm): Pad 1 [+3V3_VIS] of R_VIS_EN on F.Cu
+    @(19.8500 mm, 37.3000 mm): Track [V_SERVO_L] on F.Cu, length 3.3500 mm
+    @(19.8500 mm, 37.3000 mm): Pad 2 [Net-(U3_L1-FB)] of U3_L1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(8.7250 mm, -0.5000 mm): Track [VISION_RESET] on F.Cu, length 1.6000 mm
-    @(8.6750 mm, -0.5000 mm): Pad 1 [+3V3_VIS] of R_VIS_EN on F.Cu
+    @(13.2500 mm, 10.6000 mm): Track [VIS_USB_D-] on F.Cu, length 1.0017 mm
+    @(13.2500 mm, 10.6000 mm): Pad 14 [VIS_USB_D+] of U8 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(13.2500 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 2.8700 mm
-    @(13.2500 mm, -2.1000 mm): Pad 4 [CAM_SDA] of U8 on F.Cu
+    @(23.1375 mm, 62.7750 mm): Track [GND] on F.Cu, length 2.6000 mm
+    @(23.0000 mm, 62.7750 mm): Pad 1 [+3V3] of U6 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(13.2500 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 2.8700 mm
-    @(13.2500 mm, -0.8300 mm): Pad 5 [CAM_SCL] of U8 on F.Cu
+    @(21.2492 mm, 50.5758 mm): Track [V_SERVO_L] on F.Cu, length 1.0595 mm
+    @(20.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_L1-FB)] of R_FB2_L1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(13.2500 mm, -0.5000 mm): Track [VISION_RESET] on F.Cu, length 2.9250 mm
-    @(13.2500 mm, -0.8300 mm): Pad 5 [CAM_SCL] of U8 on F.Cu
+    @(14.3659 mm, 9.3300 mm): Track [VIS_USB_D+] on F.Cu, length 1.1159 mm
+    @(13.2500 mm, 9.3300 mm): Pad 13 [VIS_USB_D-] of U8 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(47.1000 mm, -8.0000 mm): Via [VISION_RESET] on F.Cu - B.Cu
-    @(47.3500 mm, -8.4000 mm): Pad MP [<no net>] of J_CAM on F.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(47.1000 mm, -8.0000 mm): Track [VISION_RESET] on B.Cu, length 36.7750 mm
-    @(44.0000 mm, -8.4600 mm): PTH pad 2 [CAM_LED_DRAIN] of J_CAM_LED
+    @(101.5059 mm, 80.7191 mm): Track [VBUS_MAIN] on F.Cu, length 3.8454 mm
+    @(104.2250 mm, 78.0000 mm): Pad 1 [GND] of C_VBUS_MAIN1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(39.4775 mm, -8.4600 mm): Track [CAM_LED_DRAIN] on F.Cu, length 4.5225 mm
-    @(42.9000 mm, -8.0000 mm): Pad 1 [GND] of SW_VIS_RST on F.Cu
+    @(37.9625 mm, 72.7500 mm): Track [unconnected-(U2-SYS-Pad15)] on F.Cu, length 0.5000 mm
+    @(37.9625 mm, 73.2500 mm): Pad 15 [unconnected-(U2-SYS-Pad15)_1] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.6500 mm, -4.0000 mm): Track [CAM_LED_DRAIN] on F.Cu, length 1.0595 mm
+    @(43.6500 mm, -4.0000 mm): Pad 2 [+5V_TOF] of D_CAM_LED1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7250 mm, -4.5000 mm): Track [+3V3_VIS] on F.Cu, length 0.2475 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5500 mm, -4.6750 mm): Track [+3V3_VIS] on F.Cu, length 2.3250 mm
+    @(8.5500 mm, -7.0000 mm): Pad 1 [GND] of C_U8_1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5500 mm, -4.6750 mm): Track [+3V3_VIS] on F.Cu, length 2.3250 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(9.4597 mm, -3.7653 mm): Track [+3V3_VIS] on F.Cu, length 1.0390 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7250 mm, -4.5000 mm): Track [+3V3_VIS] on F.Cu, length 1.0841 mm
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7250 mm, -2.1000 mm): Track [VISION_RESET] on F.Cu, length 2.2627 mm
+    @(8.7250 mm, -2.5000 mm): Pad 1 [GND] of C_VIS_EN1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7250 mm, -2.5000 mm): Track [VISION_RESET] on F.Cu, length 0.4000 mm
+    @(8.7250 mm, -2.5000 mm): Pad 1 [GND] of C_VIS_EN1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(81.1375 mm, 57.7750 mm): Track [+3V3] on F.Cu, length 3.7387 mm
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.1750 mm, 22.5000 mm): Track [+3V3] on F.Cu, length 7.3704 mm
+    @(78.1750 mm, 22.5000 mm): Pad 1 [Net-(LED_3V3-A)] of R_3V3_LED1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(78.1750 mm, 20.0375 mm): Track [+3V3] on F.Cu, length 2.4625 mm
+    @(78.1750 mm, 22.5000 mm): Pad 1 [Net-(LED_3V3-A)] of R_3V3_LED1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(87.5446 mm, 41.8919 mm): Track [V_SERVO_R] on F.Cu, length 1.6856 mm
+    @(90.1500 mm, 40.7000 mm): Pad 2 [Net-(U3_R1-FB)] of U3_R1 on F.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(21.5742 mm, 71.3331 mm): Via [GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(11.2698 mm, -4.8604 mm): Via [+3V3_VIS] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(11.4901 mm, -6.6081 mm): Via [+3V3_VIS] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(11.3029 mm, -2.7231 mm): Via [VISION_RESET] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(41.5000 mm, -11.0000 mm): Via [+5V_TOF] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(38.5000 mm, -4.0000 mm): Via [CAM_LED_DRAIN] on F.Cu - B.Cu
 [track_dangling]: Track has unconnected end
     Local override; warning
-    @(13.9000 mm, -9.0000 mm): Track [GND] on F.Cu, length 1.5000 mm
-[track_dangling]: Track has unconnected end
+    @(16.0822 mm, 63.0022 mm): Track [PWM_L_8] on F.Cu, length 0.3173 mm
+[via_dangling]: Via is not connected or connected on only one layer
     Local override; warning
-    @(62.3250 mm, 57.0000 mm): Track [Net-(BZ1-+)] on F.Cu, length 1.1667 mm
+    @(63.9947 mm, 56.6415 mm): Via [Net-(BZ1-+)] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(106.6245 mm, 76.7996 mm): Via [VBUS_MAIN] on F.Cu - B.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, -16.5000 mm): Rectangle on Edge.Cuts
+    @(-0.5000 mm, 72.5000 mm): Reference field of J_BAT1
 
-** Found 3 unconnected pads **
+** Found 30 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(49.2500 mm, -5.1500 mm): Track [GND] on F.Cu, length 0.9017 mm
-    @(42.9000 mm, -8.0000 mm): Pad 1 [GND] of SW_VIS_RST on F.Cu
+    @(8.5500 mm, -7.0000 mm): Pad 1 [GND] of C_U8_1 on F.Cu
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(55.7500 mm, 46.9500 mm): Track [GND] on F.Cu, length 2.3500 mm
+    @(8.5500 mm, -7.0000 mm): Pad 1 [GND] of C_U8_1 on F.Cu
+    @(7.5400 mm, -11.0000 mm): PTH pad 2 [GND] of J_TOF1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(8.7250 mm, -2.5000 mm): Pad 1 [GND] of C_VIS_EN1 on F.Cu
+    @(8.7250 mm, -4.5000 mm): Pad 1 [GND] of C_U8_2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(13.7229 mm, -7.0360 mm): Track [GND] on F.Cu, length 0.4201 mm
+    @(18.4000 mm, -12.0000 mm): Pad 1 [GND] of SW_VIS_RST1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(19.7374 mm, 67.8707 mm): Via [GND] on F.Cu - B.Cu
+    @(23.0294 mm, 71.3331 mm): Track [GND] on F.Cu, length 1.4552 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(36.8250 mm, -4.5000 mm): Track [GND] on F.Cu, length 1.5000 mm
+    @(39.2250 mm, -7.0000 mm): Pad 1 [GND] of C_VBUS_VIS1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(54.7500 mm, 46.9500 mm): Pad 9 [GND] of U7 on F.Cu
+    @(55.7500 mm, 46.9500 mm): Track [GND] on F.Cu, length 2.3500 mm
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(58.0000 mm, 62.8000 mm): Track [Net-(BZ1-+)] on F.Cu, length 4.0000 mm
-    @(58.0000 mm, 66.0000 mm): PTH pad 1 [Net-(BZ1-+)] of BZ1
+    @(81.0000 mm, 58.3500 mm): Pad 2 [GND] of U5 on F.Cu
+    @(81.0000 mm, 57.7000 mm): Pad 1 [GND] of U5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(106.7235 mm, 75.8900 mm): Track [GND] on F.Cu, length 0.5085 mm
+    @(104.2250 mm, 78.0000 mm): Pad 1 [GND] of C_VBUS_MAIN1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(21.2492 mm, 50.5758 mm): Track [V_SERVO_L] on F.Cu, length 1.0595 mm
+    @(20.5000 mm, 54.9375 mm): Track [V_SERVO_L] on F.Cu, length 2.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(10.8419 mm, -6.6081 mm): Track [+3V3_VIS] on F.Cu, length 0.5542 mm
+    @(11.2698 mm, -4.8604 mm): Track [+3V3_VIS] on F.Cu, length 0.6344 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(11.2698 mm, -4.8604 mm): Track [+3V3_VIS] on F.Cu, length 0.6344 mm
+    @(13.2500 mm, -4.6400 mm): Track [+3V3_VIS] on F.Cu, length 1.0017 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(11.3029 mm, -2.7231 mm): Via [VISION_RESET] on F.Cu - B.Cu
+    @(12.2483 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 0.9467 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.2517 mm, -3.3700 mm): Track [VISION_RESET] on F.Cu, length 0.3546 mm
+    @(22.6000 mm, -12.0000 mm): Pad 2 [VISION_RESET] of SW_VIS_RST1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(28.3778 mm, 62.2903 mm): Track [+3V3] on F.Cu, length 6.7078 mm
+    @(23.0000 mm, 62.7750 mm): Pad 1 [+3V3] of U6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5000 mm, 54.9375 mm): Track [V_SERVO_R] on F.Cu, length 2.0000 mm
+    @(89.5000 mm, 51.3250 mm): Track [V_SERVO_R] on F.Cu, length 0.4867 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5000 mm, 47.8250 mm): Track [Net-(U3_R1-FB)] on F.Cu, length 2.0000 mm
+    @(89.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_R1-FB)] of R_FB2_R1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.1500 mm, 40.7000 mm): Pad 2 [Net-(U3_R1-FB)] of U3_R1 on F.Cu
+    @(89.5000 mm, 47.8250 mm): Track [Net-(U3_R1-FB)] on F.Cu, length 2.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(20.5000 mm, 47.8250 mm): Pad 1 [Net-(U3_L1-FB)] of R_FB1_L1 on F.Cu
+    @(19.8500 mm, 37.3000 mm): Pad 2 [Net-(U3_L1-FB)] of U3_L1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(20.5000 mm, 51.3250 mm): Pad 1 [Net-(U3_L1-FB)] of R_FB2_L1 on F.Cu
+    @(20.5000 mm, 47.8250 mm): Pad 1 [Net-(U3_L1-FB)] of R_FB1_L1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(43.6500 mm, -4.0000 mm): Pad 2 [+5V_TOF] of D_CAM_LED1 on F.Cu
+    @(46.3705 mm, 14.5205 mm): Track [+5V_TOF] on F.Cu, length 4.6032 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(44.0000 mm, -11.0000 mm): PTH pad 1 [+5V_TOF] of J_CAM_LED1
+    @(43.6500 mm, -4.0000 mm): Pad 2 [+5V_TOF] of D_CAM_LED1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(40.3500 mm, -4.0000 mm): Track [CAM_LED_DRAIN] on F.Cu, length 1.8500 mm
+    @(43.6500 mm, -4.0000 mm): Track [CAM_LED_DRAIN] on F.Cu, length 1.0595 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.0800 mm, 62.0000 mm): PTH pad 3 [PWM_L_8] of J_L6_T1
+    @(16.0822 mm, 63.0022 mm): Track [PWM_L_8] on F.Cu, length 0.3173 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(62.3250 mm, 57.0000 mm): Pad 2 [Net-(BZ1-+)] of R_BZ1 on F.Cu
+    @(56.9000 mm, 67.5000 mm): PTH pad 1 [Net-(BZ1-+)] of BZ1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(81.6000 mm, 82.3550 mm): Track [VBUS_VIS] on F.Cu, length 1.8550 mm
+    @(40.7750 mm, -7.0000 mm): Pad 2 [VBUS_VIS] of C_VBUS_VIS1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(78.1750 mm, 22.5000 mm): Pad 1 [Net-(LED_3V3-A)] of R_3V3_LED1 on F.Cu
+    @(79.7875 mm, 21.0932 mm): Track [Net-(LED_3V3-A)] on F.Cu, length 1.0932 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(13.2500 mm, 9.3300 mm): Pad 13 [VIS_USB_D-] of U8 on F.Cu
+    @(13.2500 mm, 10.6000 mm): Track [VIS_USB_D-] on F.Cu, length 1.0017 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(14.3659 mm, 9.3300 mm): Track [VIS_USB_D+] on F.Cu, length 1.1159 mm
+    @(13.2500 mm, 10.6000 mm): Pad 14 [VIS_USB_D+] of U8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.7750 mm, 78.0000 mm): Pad 2 [VBUS_MAIN] of C_VBUS_MAIN1 on F.Cu
+    @(101.5059 mm, 80.7191 mm): Track [VBUS_MAIN] on F.Cu, length 3.8454 mm
 
 ** Found 0 Footprint errors **
 
